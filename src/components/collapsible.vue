@@ -26,6 +26,15 @@
                 default: false
             },
 
+            params: {
+                type: Object,
+                default() {
+                    return {
+                        accordion: false
+                    }
+                }
+            },
+
             popout: {
                 type: Boolean,
                 default: false
@@ -36,12 +45,6 @@
             classes () {
                 return {
                     'popout': this.popout
-                }
-            },
-
-            params () {
-                return {
-                    accordion: this.type === 'accordion'
                 }
             },
 
