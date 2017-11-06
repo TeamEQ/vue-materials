@@ -7,10 +7,12 @@
     </ul>
 </template>
 
-<script type="text/babel">
+<script type="text/babel">    
     import IsLoadable from '../mixins/is-loadable'
 
     export default {
+        name: 'TeamEqCollapsible',
+        
         mixins: [
             IsLoadable
         ],
