@@ -40,6 +40,11 @@
             popout: {
                 type: Boolean,
                 default: false
+            },
+
+            openedAtStart: {
+                type: [Boolean, Number],
+                default: false
             }
         },
 
@@ -59,6 +64,9 @@
         methods: {
             init () {
                 $(this.$el).collapsible(this.params)
+                if (this.openenedAtStart) {
+                    $(this.$el).collapsible('open', this.openenedAtStart);                    
+                }
             }
         }
     }
