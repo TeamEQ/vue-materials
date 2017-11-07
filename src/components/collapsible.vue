@@ -51,7 +51,6 @@
         watch: {
             openedAtStart(value) {
                 if (value) {
-                    console.log('dentro', value)                    
                     $(this.$el).collapsible('open', value);                   
                 }
             }
