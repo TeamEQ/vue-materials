@@ -64,9 +64,9 @@
         methods: {
             init () {
                 $(this.$el).collapsible(this.params)
-                console.log('fuera', this.openenedAtStart)
-                if (this.openenedAtStart) {
-                    console.log('dentro', this.openenedAtStart)                    
+                console.log('fuera', this.openedAtStart)
+                if (this.openedAtStart) {
+                    console.log('dentro', this.openedAtStart)                    
                     $(this.$el).collapsible('open', this.openenedAtStart);                   
                 }
             }
