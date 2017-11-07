@@ -48,6 +48,15 @@
             }
         },
 
+        watch: {
+            openedAtStart(value) {
+                if (value) {
+                    console.log('dentro', value)                    
+                    $(this.$el).collapsible('open', value);                   
+                }
+            }
+        },
+
         computed: {
             classes () {
                 return {
@@ -64,11 +73,6 @@
         methods: {
             init () {
                 $(this.$el).collapsible(this.params)
-                console.log('fuera', this.openedAtStart)
-                if (this.openedAtStart) {
-                    console.log('dentro', this.openedAtStart)                    
-                    $(this.$el).collapsible('open', this.openenedAtStart);                   
-                }
             }
         }
     }
