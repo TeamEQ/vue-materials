@@ -64,8 +64,10 @@
         methods: {
             init () {
                 $(this.$el).collapsible(this.params)
+                console.log('fuera', this.openenedAtStart)
                 if (this.openenedAtStart) {
-                    $(this.$el).collapsible('open', this.openenedAtStart);                    
+                    console.log('dentro', this.openenedAtStart)                    
+                    $(this.$el).collapsible('open', this.openenedAtStart);                   
                 }
             }
         }
